@@ -18,6 +18,7 @@ export class ConsultaPersonaComponent implements OnInit {
   
   get(){
     this.personas = this.personaService.get();
+    
   }
 
 }

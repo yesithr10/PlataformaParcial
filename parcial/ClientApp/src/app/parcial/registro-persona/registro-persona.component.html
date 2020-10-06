@@ -1,1 +1,50 @@
-<p>registro-persona works!</p>
+<form>
+    <div class="form-group">
+      <label for="formGroupExampleInput">Cedula</label>
+      <input type="text" class="form-control" id="cedula" name="cedula"[(ngModel)]="persona.cedula" placeholder="Digite su cedula">
+    </div>
+    <div class="form-group">
+      <label for="formGroupExampleInput2">Nombre completo</label>
+      <input type="text" class="form-control" id="nombrecompleto" name="nombrecompleto" [(ngModel)]="persona.nombreCompleto" placeholder="Digite su nombre">
+    </div>
+    <div class="form-group">
+        <label for="formGroupExampleInput2">Sexo</label>
+        <input type="text" class="form-control" id="sexo" name="sexo" [(ngModel)]="persona.sexo" placeholder="Digite su sexo">
+    </div>
+    <div class="form-group">
+        <label for="formGroupExampleInput2">Edad</label>
+        <input type="text" class="form-control" id="edad" name="edad" [(ngModel)]="persona.edad" placeholder="Digite su edad">
+    </div>
+    <div class="form-group">
+        <label for="formGroupExampleInput2">Departamento</label>
+        <input type="text" class="form-control" id="departamento" name="departamento" [(ngModel)]="persona.departamento" placeholder="Digite su departamento">
+    </div>
+    <div class="form-group">
+        <label for="formGroupExampleInput2">Ciudad</label>
+        <input type="text" class="form-control" id="ciudad" name="ciudad" [(ngModel)]="persona.ciudad" placeholder="Digite su ciudad de origen">
+    </div>
+    <div class="form-group">
+        <label for="formGroupExampleInput2">Valor del apoyo</label>
+        <input type="number" class="form-control" id="valor" name="valor" [(ngModel)]="persona.valorApoyo" placeholder="Digite el valor del apoyo">
+    </div>
+    <div class="form-check">
+        <label for="formGroupExampleInput2">Tipo de apoyo</label><br>
+        <input class="form-check-input" type="radio" name="tipoAlimentaro" id="tipoAlimentario" [(ngModel)]="persona.tipo" value="option1">
+        <label class="form-check-label" for="tipoAlimentaro">
+          Alimentario
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="tipoEconomico" id="tipoEconomico" [(ngModel)]="persona.tipo" value="option2">
+        <label class="form-check-label" for="tipoEconomico">
+          Economico
+        </label>
+      </div>
+    <div class="form-group">
+        <label for="formGroupExampleInput2">Fecha</label>
+        <input type="text" class="form-control" id="tipo" name="tipo" [(ngModel)]="persona.fecha" placeholder="Digite la fecha">
+    </div>
+
+    <button (click)="validacion()"  type="button" class="btn btn-outline-success">Guardar </button>
+    
+  </form>

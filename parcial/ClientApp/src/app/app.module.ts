@@ -12,6 +12,7 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { RegistroPersonaComponent } from './parcial/registro-persona/registro-persona.component';
 import { ConsultaPersonaComponent } from './parcial/consulta-persona/consulta-persona.component';
 import { AppRoutingModule } from './app-routing.module';
+import { PersonaService } from './services/persona.service';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,7 @@ import { AppRoutingModule } from './app-routing.module';
     ]),
     AppRoutingModule
   ],
-  providers: [],
+  providers: [PersonaService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

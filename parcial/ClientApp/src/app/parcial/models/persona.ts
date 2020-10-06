@@ -8,4 +8,5 @@ export class Persona {
     valorApoyo: number;
     tipo: string;
     fecha: string;
+    tope: number;
 }

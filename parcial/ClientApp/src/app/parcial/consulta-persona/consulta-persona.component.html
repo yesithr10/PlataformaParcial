@@ -1,1 +1,39 @@
-<p>consulta-persona works!</p>
+<div align="center">
+    <style type="text/css">
+        table,th,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+    <h5>Lista de beneficiarios.</h5><br>
+    <table style="width: 100%">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Cedula</th>
+                <th>Nombre Completo</th>
+                <th>Genero</th>
+                <th>Edad</th>
+                <th>Departamento</th>
+                <th>Ciudad</th>
+                <th>Valor</th>
+                <th>Tipo</th>
+                <th>Fecha</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let persona of personas; index as i">
+                <td>{{i + 1}}</td>
+                <td>{{persona.cedula}}</td>
+                <td>{{persona.nombreCompleto}}</td>
+                <td>{{persona.sexo}}</td>
+                <td>{{persona.edad}}</td>
+                <td>{{persona.departamento}}</td>
+                <td>{{persona.ciudad}}</td>
+                <td>{{persona.valorApoyo}}</td>
+                <td>{{persona.tipo}}</td>
+                <td>{{persona.fecha}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
